@@ -13,6 +13,7 @@
 		04382645282D447D007291D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04382643282D447D007291D5 /* Main.storyboard */; };
 		04382647282D4481007291D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04382646282D4481007291D5 /* Assets.xcassets */; };
 		0438264A282D4481007291D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04382648282D4481007291D5 /* LaunchScreen.storyboard */; };
+		04382659282D5D33007291D5 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04382658282D5D32007291D5 /* ViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04382646282D4481007291D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04382649282D4481007291D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0438264B282D4481007291D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04382658282D5D32007291D5 /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		0438263C282D447D007291D5 /* LawPavilion Coding Exercise */ = {
 			isa = PBXGroup;
 			children = (
-				0438263D282D447D007291D5 /* AppDelegate.swift */,
-				0438263F282D447D007291D5 /* SceneDelegate.swift */,
-				04382641282D447D007291D5 /* ViewController.swift */,
-				04382643282D447D007291D5 /* Main.storyboard */,
-				04382646282D4481007291D5 /* Assets.xcassets */,
-				04382648282D4481007291D5 /* LaunchScreen.storyboard */,
+				04382656282D4E7F007291D5 /* Service */,
+				04382651282D4DB4007291D5 /* App */,
+				04382654282D4E0B007291D5 /* Model */,
+				04382653282D4E02007291D5 /* View */,
+				04382655282D4E15007291D5 /* View-model */,
+				04382652282D4DD0007291D5 /* Resources */,
 				0438264B282D4481007291D5 /* Info.plist */,
 			);
 			path = "LawPavilion Coding Exercise";
+			sourceTree = "<group>";
+		};
+		04382651282D4DB4007291D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0438263D282D447D007291D5 /* AppDelegate.swift */,
+				0438263F282D447D007291D5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04382652282D4DD0007291D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04382646282D4481007291D5 /* Assets.xcassets */,
+				04382648282D4481007291D5 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04382653282D4E02007291D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04382657282D5CFD007291D5 /* ViewLayout */,
+				04382643282D447D007291D5 /* Main.storyboard */,
+				04382641282D447D007291D5 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04382654282D4E0B007291D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04382655282D4E15007291D5 /* View-model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View-model";
+			sourceTree = "<group>";
+		};
+		04382656282D4E7F007291D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04382657282D5CFD007291D5 /* ViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				04382658282D5D32007291D5 /* ViewLayout.swift */,
+			);
+			path = ViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04382659282D5D33007291D5 /* ViewLayout.swift in Sources */,
 				04382642282D447D007291D5 /* ViewController.swift in Sources */,
 				0438263E282D447D007291D5 /* AppDelegate.swift in Sources */,
 				04382640282D447D007291D5 /* SceneDelegate.swift in Sources */,
