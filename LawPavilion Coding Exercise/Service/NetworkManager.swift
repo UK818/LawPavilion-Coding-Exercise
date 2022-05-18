@@ -11,12 +11,12 @@ class NetworkManager {
 	
 	static let shared = NetworkManager()
 	
-	func networkRequest() {
+	func networkRequest(completionHandler: @escaping ([User]) -> Void) {
 		guard let url = URL(string: Constants.getURL()) else { return }
 		let task = URLSession.shared.task(with: url) { data, _, error in
 			if let data = data {
-				
-				print("Data is: ", data.totalCount, Constants.getURL())
+//				print("Data is: ", data.totalCount)
+				completionHandler(data.items)
 			}
 			
 			if let error = error {
