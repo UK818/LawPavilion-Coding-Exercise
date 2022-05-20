@@ -23,8 +23,23 @@
 		047626E02830B9E9009632EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626DF2830B9E9009632EA /* Constants.swift */; };
 		047626E22830C11E009632EA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626E12830C11E009632EA /* DataModel.swift */; };
 		047626E52830C1E8009632EA /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626E42830C1E8009632EA /* URLSession+Extension.swift */; };
+		048ADCF528359F0000C8EA1E /* ActivityIndicatorViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048ADCF428359F0000C8EA1E /* ActivityIndicatorViewLayout.swift */; };
+		04C31EC12836A11C008D2276 /* service_view_model_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31EC02836A11C008D2276 /* service_view_model_test.swift */; };
+		04C31EC32836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */; };
+		04C31ECE28376848008D2276 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31ECD28376848008D2276 /* UITests.swift */; };
+		04C31ED02837A58F008D2276 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31ECF2837A58F008D2276 /* CollectionViewLayout.swift */; };
 		B3D4004BFEDC24BD87A7EE76 /* Pods_LawPavilion_Coding_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFCC8782552C307E644EA15 /* Pods_LawPavilion_Coding_Exercise.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04C31EC42836A11C008D2276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04382632282D447D007291D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04382639282D447D007291D5;
+			remoteInfo = "LawPavilion Coding Exercise";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0438263A282D447D007291D5 /* LawPavilion Coding Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LawPavilion Coding Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +60,12 @@
 		047626DF2830B9E9009632EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		047626E12830C11E009632EA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		047626E42830C1E8009632EA /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		048ADCF428359F0000C8EA1E /* ActivityIndicatorViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewLayout.swift; sourceTree = "<group>"; };
+		04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LawPavilion Coding Exercise UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C31EC02836A11C008D2276 /* service_view_model_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service_view_model_test.swift; sourceTree = "<group>"; };
+		04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawPavilion_Coding_Exercise_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C31ECD28376848008D2276 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		04C31ECF2837A58F008D2276 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		2EFCC8782552C307E644EA15 /* Pods_LawPavilion_Coding_Exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawPavilion_Coding_Exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73178105A0C608D0B53923A0 /* Pods-LawPavilion Coding Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawPavilion Coding Exercise.debug.xcconfig"; path = "Target Support Files/Pods-LawPavilion Coding Exercise/Pods-LawPavilion Coding Exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		DA093BBC1841B9B7F397BEB9 /* Pods-LawPavilion Coding Exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawPavilion Coding Exercise.release.xcconfig"; path = "Target Support Files/Pods-LawPavilion Coding Exercise/Pods-LawPavilion Coding Exercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04C31EBB2836A11C008D2276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0438263C282D447D007291D5 /* LawPavilion Coding Exercise */,
+				04C31EBF2836A11C008D2276 /* LawPavilion Coding Exercise UITests */,
 				0438263B282D447D007291D5 /* Products */,
 				DB0E2969C1EDBE43A6B2F6B5 /* Pods */,
 				CFA385CAC2527628BF652566 /* Frameworks */,
@@ -76,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0438263A282D447D007291D5 /* LawPavilion Coding Exercise.app */,
+				04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,10 +148,8 @@
 			children = (
 				04382657282D5CFD007291D5 /* ViewLayout */,
 				04382643282D447D007291D5 /* Main.storyboard */,
-				04382641282D447D007291D5 /* HomeViewController.swift */,
-				045491DE28313CC7000F58EE /* CollectionViewCell.swift */,
-				045491E028314A07000F58EE /* HomeViewController+Extension.swift */,
-				045491E22832F780000F58EE /* DetailViewController.swift */,
+				04C31ECA2836A5AA008D2276 /* Controller */,
+				04C31EC92836A58C008D2276 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +184,8 @@
 			children = (
 				04382658282D5D32007291D5 /* HomeViewLayout.swift */,
 				045491E42832F812000F58EE /* DetailViewLayout.swift */,
+				048ADCF428359F0000C8EA1E /* ActivityIndicatorViewLayout.swift */,
+				04C31ECF2837A58F008D2276 /* CollectionViewLayout.swift */,
 			);
 			path = ViewLayout;
 			sourceTree = "<group>";
@@ -166,6 +196,34 @@
 				047626E42830C1E8009632EA /* URLSession+Extension.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		04C31EBF2836A11C008D2276 /* LawPavilion Coding Exercise UITests */ = {
+			isa = PBXGroup;
+			children = (
+				04C31EC02836A11C008D2276 /* service_view_model_test.swift */,
+				04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */,
+				04C31ECD28376848008D2276 /* UITests.swift */,
+			);
+			path = "LawPavilion Coding Exercise UITests";
+			sourceTree = "<group>";
+		};
+		04C31EC92836A58C008D2276 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				045491DE28313CC7000F58EE /* CollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04C31ECA2836A5AA008D2276 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04382641282D447D007291D5 /* HomeViewController.swift */,
+				045491E028314A07000F58EE /* HomeViewController+Extension.swift */,
+				045491E22832F780000F58EE /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CFA385CAC2527628BF652566 /* Frameworks */ = {
@@ -207,6 +265,24 @@
 			productReference = 0438263A282D447D007291D5 /* LawPavilion Coding Exercise.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04C31EBD2836A11C008D2276 /* LawPavilion Coding Exercise UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C31EC82836A11C008D2276 /* Build configuration list for PBXNativeTarget "LawPavilion Coding Exercise UITests" */;
+			buildPhases = (
+				04C31EBA2836A11C008D2276 /* Sources */,
+				04C31EBB2836A11C008D2276 /* Frameworks */,
+				04C31EBC2836A11C008D2276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C31EC52836A11C008D2276 /* PBXTargetDependency */,
+			);
+			name = "LawPavilion Coding Exercise UITests";
+			productName = "LawPavilion Coding Exercise UITests";
+			productReference = 04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,11 +290,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					04382639282D447D007291D5 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					04C31EBD2836A11C008D2276 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 04382639282D447D007291D5;
 					};
 				};
 			};
@@ -236,6 +316,7 @@
 			projectRoot = "";
 			targets = (
 				04382639282D447D007291D5 /* LawPavilion Coding Exercise */,
+				04C31EBD2836A11C008D2276 /* LawPavilion Coding Exercise UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +329,13 @@
 				0438264A282D4481007291D5 /* LaunchScreen.storyboard in Resources */,
 				04382647282D4481007291D5 /* Assets.xcassets in Resources */,
 				04382645282D447D007291D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C31EBC2836A11C008D2276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +395,9 @@
 				045491E32832F780000F58EE /* DetailViewController.swift in Sources */,
 				045491DB283132EF000F58EE /* ServiceViewModel.swift in Sources */,
 				04382642282D447D007291D5 /* HomeViewController.swift in Sources */,
+				048ADCF528359F0000C8EA1E /* ActivityIndicatorViewLayout.swift in Sources */,
 				047626DE2830B97B009632EA /* NetworkManager.swift in Sources */,
+				04C31ED02837A58F008D2276 /* CollectionViewLayout.swift in Sources */,
 				047626E52830C1E8009632EA /* URLSession+Extension.swift in Sources */,
 				0438263E282D447D007291D5 /* AppDelegate.swift in Sources */,
 				045491E128314A07000F58EE /* HomeViewController+Extension.swift in Sources */,
@@ -316,7 +406,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04C31EBA2836A11C008D2276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C31EC12836A11C008D2276 /* service_view_model_test.swift in Sources */,
+				04C31EC32836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift in Sources */,
+				04C31ECE28376848008D2276 /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04C31EC52836A11C008D2276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04382639282D447D007291D5 /* LawPavilion Coding Exercise */;
+			targetProxy = 04C31EC42836A11C008D2276 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04382643282D447D007291D5 /* Main.storyboard */ = {
@@ -460,11 +568,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2HT7368M4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LawPavilion Coding Exercise/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,11 +598,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2HT7368M4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LawPavilion Coding Exercise/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,6 +617,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04C31EC62836A11C008D2276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-Exercise-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LawPavilion Coding Exercise";
+			};
+			name = Debug;
+		};
+		04C31EC72836A11C008D2276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-Exercise-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LawPavilion Coding Exercise";
 			};
 			name = Release;
 		};
@@ -525,6 +671,15 @@
 			buildConfigurations = (
 				0438264F282D4481007291D5 /* Debug */,
 				04382650282D4481007291D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C31EC82836A11C008D2276 /* Build configuration list for PBXNativeTarget "LawPavilion Coding Exercise UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C31EC62836A11C008D2276 /* Debug */,
+				04C31EC72836A11C008D2276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,8 +10,8 @@ import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
 	
-	static let identifier = "cell"
-	private let viewLayout: HomeViewLayout = HomeViewLayout()
+	static let identifier = "collectionViewCell"
+	private let viewLayout: CollectionViewLayout = CollectionViewLayout()
 	private let viewModel = ServiceViewModel()
 	
 	var userView: UIStackView!
@@ -34,6 +34,9 @@ class CollectionViewCell: UICollectionViewCell {
 		avatar = viewLayout.avatar
 		type = viewLayout.typeLabel
 		
+		contentView.backgroundColor = .white
+		contentView.layer.cornerRadius = 25
+		contentView.layer.borderWidth = 1
 		contentView.addSubview(userView)
 		userView.addArrangedSubview(login)
 		userView.addArrangedSubview(avatar)
@@ -42,19 +45,21 @@ class CollectionViewCell: UICollectionViewCell {
 		NSLayoutConstraint.activate([
 			userView.topAnchor.constraint(equalTo: contentView.topAnchor),
 			userView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
-			userView.heightAnchor.constraint(equalTo: contentView.heightAnchor),
-			
-//			login.widthAnchor.constraint(equalTo: userView.widthAnchor),
-			login.leadingAnchor.constraint(equalTo: userView.leadingAnchor),
-			login.trailingAnchor.constraint(equalTo: userView.trailingAnchor, constant: 10),
-			
-			avatar.heightAnchor.constraint(equalToConstant: 150)
-			
+			userView.heightAnchor.constraint(equalTo: contentView.heightAnchor)
 		])
 	}
 	
 	func populateCell(with data: User) {
-		login.text = data.login
+		if data.login.count > 10 {
+			let text = Array(data.login.lowercased())
+			var newText = ""
+			for i in 0...9 {
+				newText += String(text[i])
+			}
+			login.text = newText
+		} else {
+			login.text = data.login
+		}
 		viewModel.loadImage(with: data.avatarURL, imageView: avatar)
 		type.text = data.type
 	}

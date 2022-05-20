@@ -1,16 +1,16 @@
 //
-//  DetailViewLayout.swift
+//  CollectionViewLayout.swift
 //  LawPavilion Coding Exercise
 //
-//  Created by mac on 16/05/2022.
+//  Created by mac on 20/05/2022.
 //
 
 import Foundation
 import UIKit
 
-public class DetailViewLayout {
+class CollectionViewLayout {
 	
-	let container: UIStackView = {
+	let userView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.translatesAutoresizingMaskIntoConstraints = false
 		stackView.axis = .vertical
@@ -19,28 +19,29 @@ public class DetailViewLayout {
 		return stackView
 	}()
 	
-	let login: UILabel = {
+	let loginLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
 		label.textAlignment = .center
 		label.numberOfLines = 2
+		label.textColor = .black
+		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
 		return label
 	}()
 	
 	let avatar: UIImageView = {
-		let imageView = UIImageView()
-		imageView.translatesAutoresizingMaskIntoConstraints = false
-		imageView.contentMode = .scaleAspectFit
-		imageView.layer.cornerRadius = 30
-		return imageView
+		let image = UIImageView()
+		image.image = UIImage(named: "plaeholder")
+		image.contentMode = .scaleAspectFit
+		image.translatesAutoresizingMaskIntoConstraints = false
+		return image
 	}()
 	
-	let type: UILabel = {
+	let typeLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
 		label.textAlignment = .center
+		label.textColor = .black
 		return label
 	}()
 	

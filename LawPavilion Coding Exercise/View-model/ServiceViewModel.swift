@@ -10,17 +10,29 @@ import Kingfisher
 
 class ServiceViewModel {
 	
-	public func fetchData(searchQuery: String?, completion: @escaping ([User]) -> Void) {
-		if searchQuery != nil, searchQuery != "" {
-			Constants.searchQuery = searchQuery ?? ""
-			NetworkManager.shared.networkRequest {[weak self] result in
-				DispatchQueue.main.async {
-					completion(result.sorted{$0.login.lowercased() < $1.login.lowercased()})
-				}
-				
-			}
+	public func validateQuery(query: String) -> Bool {
+		var isValid: Bool
+		if query.count != 0 {
+			isValid = true
 		} else {
-			print("NO QUERY")
+			isValid = false
+		}
+		return isValid
+	}
+	
+	
+	public func fetchData(searchQuery: String?, page: Int, completion: @escaping ([User]) -> Void) {
+		Constants.search_query = searchQuery ?? ""
+		NetworkManager.shared.networkRequest { result in
+			DispatchQueue.main.async {
+				Constants.page = page
+				Constants.total_page = result.count / Constants.per_page
+				if result.count % Constants.per_page != 0 {
+					Constants.total_page += 1
+				}
+				completion(result.sorted{$0.login.lowercased() < $1.login.lowercased()})
+			}
+			
 		}
 	}
 	

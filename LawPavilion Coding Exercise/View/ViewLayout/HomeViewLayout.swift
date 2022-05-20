@@ -23,8 +23,11 @@ public class HomeViewLayout {
 	let searchTextView: UITextField = {
 		let textField = UITextField()
 		textField.translatesAutoresizingMaskIntoConstraints = false
-		textField.placeholder = "Search"
+		textField.placeholder = "Search GitHub User"
+		textField.tintColor = .gray
+		textField.autocapitalizationType = .none
 		textField.enablesReturnKeyAutomatically = true
+		textField.textColor = .black
 		return textField
 	}()
 	
@@ -39,11 +42,12 @@ public class HomeViewLayout {
 	let collectionView: UICollectionView = {
 		let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 		layout.itemSize = CGSize(width: 160, height: 200)
-		layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 10, right: 20)
+		layout.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
 		layout.scrollDirection = .vertical
 		
 		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 		collectionView.translatesAutoresizingMaskIntoConstraints = false
+		collectionView.backgroundColor = UIColor(white: 1, alpha: 0.1)
 		collectionView.register(
 			CollectionViewCell.self,
 			forCellWithReuseIdentifier: CollectionViewCell.identifier
@@ -51,35 +55,13 @@ public class HomeViewLayout {
 		return collectionView
 	}()
 	
-	let userView: UIStackView = {
-		let stackView = UIStackView()
-		stackView.translatesAutoresizingMaskIntoConstraints = false
-		stackView.axis = .vertical
-		stackView.distribution = .fillEqually
-		stackView.spacing = 10
-		return stackView
-	}()
-	
-	let loginLabel: UILabel = {
+	let mainLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
+		label.text = "LawPavilion Assessment Exercise"
 		label.textAlignment = .center
+		label.textColor = .black
 		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-		return label
-	}()
-	
-	let avatar: UIImageView = {
-		let image = UIImageView()
-		image.image = UIImage(named: "plaeholder")
-		image.contentMode = .scaleAspectFit
-		image.translatesAutoresizingMaskIntoConstraints = false
-		return image
-	}()
-	
-	let typeLabel: UILabel = {
-		let label = UILabel()
-		label.translatesAutoresizingMaskIntoConstraints = false
-		label.textAlignment = .center
 		return label
 	}()
 	
