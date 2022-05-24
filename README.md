@@ -5,6 +5,7 @@ Search for Github users using GitHub search API
 Thought Process:
 - Decided to use Model View View-Model (MVVM) design architecture so my code will be loosely coupled
   and that helps in writing clean and maintainable code that is easy to test.
+- I adhered to SOLID Principles
 - created UI programmatically
 - created model for data to be received from API
 - Made network call using URLSession
