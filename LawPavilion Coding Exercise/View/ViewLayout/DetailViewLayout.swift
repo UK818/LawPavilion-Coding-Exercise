@@ -16,11 +16,14 @@ public class DetailViewLayout {
 		stackView.axis = .vertical
 		stackView.distribution = .fillEqually
 		stackView.spacing = 10
+		stackView.layer.cornerRadius = 25
+		stackView.backgroundColor = .white
 		return stackView
 	}()
 	
 	let login: UILabel = {
 		let label = UILabel()
+		label.textColor = .black
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
 		label.textAlignment = .center
@@ -40,6 +43,7 @@ public class DetailViewLayout {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+		label.textColor = .black
 		label.textAlignment = .center
 		return label
 	}()

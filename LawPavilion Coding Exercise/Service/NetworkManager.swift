@@ -7,18 +7,25 @@
 
 import Foundation
 
-final class NetworkManager {
+protocol NetworkService {
+	func networkRequest(completionHandler: @escaping (Result<[User], Error>) -> Void)
+}
+
+final class NetworkManager: NetworkService {
 	
 	static let shared = NetworkManager()
 	
-	func networkRequest(completionHandler: @escaping ([User]) -> Void) {
+	func networkRequest(completionHandler: @escaping (Result<[User], Error>) -> Void) {
 		guard let url = URL(string: Constants.getURL()) else { return }
 		let task = URLSession.shared.task(with: url) { data, _, error in
 			if let data = data {
-				completionHandler(data.items)
+				DispatchQueue.main.async {
+					completionHandler(.success(data.items))
+				}
 			}
 			
 			if let error = error {
+				completionHandler(.failure(NSError()))
 				print("Error is : ", error)
 			}
 		}

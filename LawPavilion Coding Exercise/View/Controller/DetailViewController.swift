@@ -8,48 +8,65 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-	
-	private let detailViewLayout = DetailViewLayout()
-	private let viewModel = ServiceViewModel()
-	
-	var container: UIStackView!
-	var login: UILabel!
-	var avatar: UIImageView!
-	var type: UILabel!
 
+	private var detailViewLayout: DetailViewLayout!
+	private var serviceViewModel: ServiceViewModel!
+	private var networkService: NetworkService!
+	
+	private var container: UIStackView!
+	private var login: UILabel!
+	private var avatar: UIImageView!
+	private var type: UILabel!
+	
+	var user: User
+	
+	init(user: User) {
+		self.user = user
+		self.detailViewLayout = DetailViewLayout()
+		self.networkService = NetworkManager()
+		self.serviceViewModel = ServiceViewModel(networkService: networkService)
+		super.init(nibName: nil, bundle: nil)
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-		view.backgroundColor = .white
-		setupLayout()
+		setupView()
     }
 	
-	private func setupLayout() {
-		
+	override func viewDidLayoutSubviews() {
+		setupLayout()
+	}
+	
+	private func setupView() {
 		container = detailViewLayout.container
 		login = detailViewLayout.login
 		avatar = detailViewLayout.avatar
 		type = detailViewLayout.type
-		
+		populateView()
+	}
+	
+	private func setupLayout() {
 		view.addSubview(container)
 		container.addArrangedSubview(login)
 		container.addArrangedSubview(avatar)
 		container.addArrangedSubview(type)
 		
 		NSLayoutConstraint.activate([
-			
 			container.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			container.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 			container.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -60),
 			container.heightAnchor.constraint(equalTo: view.heightAnchor, constant: -100)
-			
 		])
 	}
 	
-	func populateView(with data: User) {
-		view.largeContentTitle = data.login
-		login?.text = data.login
-		viewModel.loadDetailImage(with: data.avatarURL, imageView: avatar)
-		type?.text = data.type
+	func populateView() {
+		login?.text = user.login
+		serviceViewModel?.loadDetailImage(with: user.avatarURL, imageView: avatar)
+		type?.text = user.type
 	}
 
 }

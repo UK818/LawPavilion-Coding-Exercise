@@ -8,7 +8,18 @@
 import Foundation
 import Kingfisher
 
+protocol ServiceViewModelOutput: AnyObject {
+	func updateViews(with data: [User])
+}
+
 class ServiceViewModel {
+	
+	weak var output: ServiceViewModelOutput?
+	private let networkService: NetworkService
+	
+	init(networkService: NetworkService) {
+		self.networkService = networkService
+	}
 	
 	public func validateQuery(query: String) -> Bool {
 		var isValid: Bool
@@ -20,19 +31,26 @@ class ServiceViewModel {
 		return isValid
 	}
 	
-	
-	public func fetchData(searchQuery: String?, page: Int, completion: @escaping ([User]) -> Void) {
-		Constants.search_query = searchQuery ?? ""
-		NetworkManager.shared.networkRequest { result in
-			DispatchQueue.main.async {
-				Constants.page = page
-				Constants.total_page = result.count / Constants.per_page
-				if result.count % Constants.per_page != 0 {
-					Constants.total_page += 1
-				}
-				completion(result.sorted{$0.login.lowercased() < $1.login.lowercased()})
+	public func fetchData(searchQuery: String?, page: Int) {
+		if validateQuery(query: searchQuery ?? "user") {
+			Constants.search_query = searchQuery ?? ""
+		} else {
+			return
+		}
+		Constants.page = page
+		networkService.networkRequest { [weak self] result in
+			switch result {
+				case .success(let userData):
+					let data = userData.sorted{ $0.login.lowercased() < $1.login.lowercased() }
+					let filteredData = data.filter({ $0.login.contains(searchQuery ?? "") })
+					self?.output?.updateViews(with: data)
+					Constants.total_page = data.count / Constants.per_page
+					if data.count % Constants.per_page != 0 {
+						Constants.total_page += 1
+					}
+				case .failure:
+					print("An error occured: ", LocalizedError.self)
 			}
-			
 		}
 	}
 	

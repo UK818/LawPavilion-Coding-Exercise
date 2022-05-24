@@ -32,8 +32,7 @@ extension HomeViewController: UICollectionViewDataSource {
 extension HomeViewController: UICollectionViewDelegate {
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		let vc = DetailViewController()
-		vc.populateView(with: userData[indexPath.row])
+		let vc = DetailViewController(user: userData[indexPath.row])
 		present(vc, animated: true)
 	}
 	

@@ -12,7 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
 	
 	static let identifier = "collectionViewCell"
 	private let viewLayout: CollectionViewLayout = CollectionViewLayout()
-	private let viewModel = ServiceViewModel()
+	private let serviceViewModel = ServiceViewModel(networkService: NetworkManager())
 	
 	var userView: UIStackView!
 	var login: UILabel!
@@ -60,7 +60,7 @@ class CollectionViewCell: UICollectionViewCell {
 		} else {
 			login.text = data.login
 		}
-		viewModel.loadImage(with: data.avatarURL, imageView: avatar)
+		serviceViewModel.loadImage(with: data.avatarURL, imageView: avatar)
 		type.text = data.type
 	}
 	
