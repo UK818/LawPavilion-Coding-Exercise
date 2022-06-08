@@ -20,7 +20,7 @@ class HomeViewController: UIViewController, ServiceViewModelOutput {
 	var collectionView: UICollectionView!
 	var introLabel: UILabel!
 	var userData = [User]()
-	var currentPage: Int = 1
+	var currentPage: Int!
 	
 	init(serviceViewModel: ServiceViewModel, homeViewLayout: HomeViewLayout) {
 		self.serviceViewModel = serviceViewModel
@@ -51,6 +51,7 @@ class HomeViewController: UIViewController, ServiceViewModelOutput {
 		searchButton = homeViewLayout.searchButton
 		collectionView = homeViewLayout.collectionView
 		introLabel = homeViewLayout.mainLabel
+		currentPage = Constants.page
 		userData = []
 		
 		view.backgroundColor = UIColor(white: 1, alpha: 0.95)

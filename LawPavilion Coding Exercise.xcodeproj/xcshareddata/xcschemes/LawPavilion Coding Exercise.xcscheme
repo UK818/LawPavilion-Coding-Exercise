@@ -38,6 +38,16 @@
                ReferencedContainer = "container:LawPavilion Coding Exercise.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "04565095283EA9E3000F77D3"
+               BuildableName = "LawPavilion Coding ExerciseTests.xctest"
+               BlueprintName = "LawPavilion Coding ExerciseTests"
+               ReferencedContainer = "container:LawPavilion Coding Exercise.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

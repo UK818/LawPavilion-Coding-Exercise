@@ -64,3 +64,24 @@ extension HomeViewController {
 		])
 	}
 }
+
+
+extension HomeViewController: UIScrollViewDelegate {
+	
+	internal func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let height = view.frame.height
+		if self.collectionView.panGestureRecognizer.translation(in: self.collectionView).y > height {
+			refreshData()
+		}
+	}
+	
+	private func refreshData() {
+		currentPage += 1
+		Constants.page += 1
+		Constants.per_page += 10
+		initiateSearch()
+		collectionView.reloadData()
+		self.view.layoutIfNeeded()
+	}
+
+}

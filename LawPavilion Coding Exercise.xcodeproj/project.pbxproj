@@ -19,20 +19,18 @@
 		045491E128314A07000F58EE /* HomeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045491E028314A07000F58EE /* HomeViewController+Extension.swift */; };
 		045491E32832F780000F58EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045491E22832F780000F58EE /* DetailViewController.swift */; };
 		045491E52832F812000F58EE /* DetailViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045491E42832F812000F58EE /* DetailViewLayout.swift */; };
+		04565099283EA9E3000F77D3 /* LawPavilion_Coding_ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565098283EA9E3000F77D3 /* LawPavilion_Coding_ExerciseTests.swift */; };
 		047626DE2830B97B009632EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626DD2830B97B009632EA /* NetworkManager.swift */; };
 		047626E02830B9E9009632EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626DF2830B9E9009632EA /* Constants.swift */; };
 		047626E22830C11E009632EA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626E12830C11E009632EA /* DataModel.swift */; };
 		047626E52830C1E8009632EA /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047626E42830C1E8009632EA /* URLSession+Extension.swift */; };
 		048ADCF528359F0000C8EA1E /* ActivityIndicatorViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048ADCF428359F0000C8EA1E /* ActivityIndicatorViewLayout.swift */; };
-		04C31EC12836A11C008D2276 /* service_view_model_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31EC02836A11C008D2276 /* service_view_model_test.swift */; };
-		04C31EC32836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */; };
-		04C31ECE28376848008D2276 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31ECD28376848008D2276 /* UITests.swift */; };
 		04C31ED02837A58F008D2276 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C31ECF2837A58F008D2276 /* CollectionViewLayout.swift */; };
 		B3D4004BFEDC24BD87A7EE76 /* Pods_LawPavilion_Coding_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFCC8782552C307E644EA15 /* Pods_LawPavilion_Coding_Exercise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04C31EC42836A11C008D2276 /* PBXContainerItemProxy */ = {
+		0456509A283EA9E3000F77D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04382632282D447D007291D5 /* Project object */;
 			proxyType = 1;
@@ -56,15 +54,13 @@
 		045491E028314A07000F58EE /* HomeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extension.swift"; sourceTree = "<group>"; };
 		045491E22832F780000F58EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		045491E42832F812000F58EE /* DetailViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewLayout.swift; sourceTree = "<group>"; };
+		04565096283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LawPavilion Coding ExerciseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04565098283EA9E3000F77D3 /* LawPavilion_Coding_ExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawPavilion_Coding_ExerciseTests.swift; sourceTree = "<group>"; };
 		047626DD2830B97B009632EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		047626DF2830B9E9009632EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		047626E12830C11E009632EA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		047626E42830C1E8009632EA /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		048ADCF428359F0000C8EA1E /* ActivityIndicatorViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewLayout.swift; sourceTree = "<group>"; };
-		04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LawPavilion Coding Exercise UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04C31EC02836A11C008D2276 /* service_view_model_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service_view_model_test.swift; sourceTree = "<group>"; };
-		04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawPavilion_Coding_Exercise_UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04C31ECD28376848008D2276 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		04C31ECF2837A58F008D2276 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		2EFCC8782552C307E644EA15 /* Pods_LawPavilion_Coding_Exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawPavilion_Coding_Exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73178105A0C608D0B53923A0 /* Pods-LawPavilion Coding Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawPavilion Coding Exercise.debug.xcconfig"; path = "Target Support Files/Pods-LawPavilion Coding Exercise/Pods-LawPavilion Coding Exercise.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +76,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04C31EBB2836A11C008D2276 /* Frameworks */ = {
+		04565093283EA9E3000F77D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -94,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0438263C282D447D007291D5 /* LawPavilion Coding Exercise */,
-				04C31EBF2836A11C008D2276 /* LawPavilion Coding Exercise UITests */,
+				04565097283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests */,
 				0438263B282D447D007291D5 /* Products */,
 				DB0E2969C1EDBE43A6B2F6B5 /* Pods */,
 				CFA385CAC2527628BF652566 /* Frameworks */,
@@ -105,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0438263A282D447D007291D5 /* LawPavilion Coding Exercise.app */,
-				04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */,
+				04565096283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,22 +186,20 @@
 			path = ViewLayout;
 			sourceTree = "<group>";
 		};
+		04565097283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				04565098283EA9E3000F77D3 /* LawPavilion_Coding_ExerciseTests.swift */,
+			);
+			path = "LawPavilion Coding ExerciseTests";
+			sourceTree = "<group>";
+		};
 		047626E32830C1C1009632EA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				047626E42830C1E8009632EA /* URLSession+Extension.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		04C31EBF2836A11C008D2276 /* LawPavilion Coding Exercise UITests */ = {
-			isa = PBXGroup;
-			children = (
-				04C31EC02836A11C008D2276 /* service_view_model_test.swift */,
-				04C31EC22836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift */,
-				04C31ECD28376848008D2276 /* UITests.swift */,
-			);
-			path = "LawPavilion Coding Exercise UITests";
 			sourceTree = "<group>";
 		};
 		04C31EC92836A58C008D2276 /* Cells */ = {
@@ -265,23 +259,23 @@
 			productReference = 0438263A282D447D007291D5 /* LawPavilion Coding Exercise.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04C31EBD2836A11C008D2276 /* LawPavilion Coding Exercise UITests */ = {
+		04565095283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04C31EC82836A11C008D2276 /* Build configuration list for PBXNativeTarget "LawPavilion Coding Exercise UITests" */;
+			buildConfigurationList = 0456509C283EA9E3000F77D3 /* Build configuration list for PBXNativeTarget "LawPavilion Coding ExerciseTests" */;
 			buildPhases = (
-				04C31EBA2836A11C008D2276 /* Sources */,
-				04C31EBB2836A11C008D2276 /* Frameworks */,
-				04C31EBC2836A11C008D2276 /* Resources */,
+				04565092283EA9E3000F77D3 /* Sources */,
+				04565093283EA9E3000F77D3 /* Frameworks */,
+				04565094283EA9E3000F77D3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				04C31EC52836A11C008D2276 /* PBXTargetDependency */,
+				0456509B283EA9E3000F77D3 /* PBXTargetDependency */,
 			);
-			name = "LawPavilion Coding Exercise UITests";
-			productName = "LawPavilion Coding Exercise UITests";
-			productReference = 04C31EBE2836A11C008D2276 /* LawPavilion Coding Exercise UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = "LawPavilion Coding ExerciseTests";
+			productName = "LawPavilion Coding ExerciseTests";
+			productReference = 04565096283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -296,7 +290,7 @@
 					04382639282D447D007291D5 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					04C31EBD2836A11C008D2276 = {
+					04565095283EA9E3000F77D3 = {
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 04382639282D447D007291D5;
 					};
@@ -316,7 +310,7 @@
 			projectRoot = "";
 			targets = (
 				04382639282D447D007291D5 /* LawPavilion Coding Exercise */,
-				04C31EBD2836A11C008D2276 /* LawPavilion Coding Exercise UITests */,
+				04565095283EA9E3000F77D3 /* LawPavilion Coding ExerciseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04C31EBC2836A11C008D2276 /* Resources */ = {
+		04565094283EA9E3000F77D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,23 +400,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04C31EBA2836A11C008D2276 /* Sources */ = {
+		04565092283EA9E3000F77D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C31EC12836A11C008D2276 /* service_view_model_test.swift in Sources */,
-				04C31EC32836A11C008D2276 /* LawPavilion_Coding_Exercise_UITestsLaunchTests.swift in Sources */,
-				04C31ECE28376848008D2276 /* UITests.swift in Sources */,
+				04565099283EA9E3000F77D3 /* LawPavilion_Coding_ExerciseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04C31EC52836A11C008D2276 /* PBXTargetDependency */ = {
+		0456509B283EA9E3000F77D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04382639282D447D007291D5 /* LawPavilion Coding Exercise */;
-			targetProxy = 04C31EC42836A11C008D2276 /* PBXContainerItemProxy */;
+			targetProxy = 0456509A283EA9E3000F77D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -618,37 +610,39 @@
 			};
 			name = Release;
 		};
-		04C31EC62836A11C008D2276 /* Debug */ = {
+		0456509D283EA9E3000F77D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-Exercise-UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-ExerciseTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LawPavilion Coding Exercise";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LawPavilion Coding Exercise.app/LawPavilion Coding Exercise";
 			};
 			name = Debug;
 		};
-		04C31EC72836A11C008D2276 /* Release */ = {
+		0456509E283EA9E3000F77D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-Exercise-UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Usman-Kulaha.LawPavilion-Coding-ExerciseTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LawPavilion Coding Exercise";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LawPavilion Coding Exercise.app/LawPavilion Coding Exercise";
 			};
 			name = Release;
 		};
@@ -673,11 +667,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04C31EC82836A11C008D2276 /* Build configuration list for PBXNativeTarget "LawPavilion Coding Exercise UITests" */ = {
+		0456509C283EA9E3000F77D3 /* Build configuration list for PBXNativeTarget "LawPavilion Coding ExerciseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04C31EC62836A11C008D2276 /* Debug */,
-				04C31EC72836A11C008D2276 /* Release */,
+				0456509D283EA9E3000F77D3 /* Debug */,
+				0456509E283EA9E3000F77D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
