@@ -42,7 +42,7 @@ class ServiceViewModel {
 			switch result {
 				case .success(let userData):
 					let data = userData.sorted{ $0.login.lowercased() < $1.login.lowercased() }
-					let filteredData = data.filter({ $0.login.contains(searchQuery ?? "") })
+					_ = data.filter({ $0.login.contains(searchQuery ?? "") })
 					self?.output?.updateViews(with: data)
 					Constants.total_page = data.count / Constants.per_page
 					if data.count % Constants.per_page != 0 {

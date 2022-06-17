@@ -24,13 +24,11 @@ struct SearchResult: Codable {
 struct User: Codable {
 	let login: String
 	let avatarURL: String
-	let url: String
 	let type: String
 
 	enum CodingKeys: String, CodingKey {
 		case login
 		case avatarURL = "avatar_url"
-		case url
 		case type
 	}
 }
